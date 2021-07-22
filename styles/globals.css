@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.color1 {
+  @apply text-blue-500;
+}
+
+.color2 {
+  @apply text-indigo-500;
+}
+
+.color3 {
+  @apply text-purple-500;
+}
