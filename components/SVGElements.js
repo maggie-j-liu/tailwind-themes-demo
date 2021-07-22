@@ -3,16 +3,15 @@ import { random, rectsIntersect } from "../utils";
 import useColorMode from "../hooks/useColorMode";
 
 const SVGElements = ({ width, height, className }) => {
-  const avgsidelen = Math.round(width / 25);
+  const avgsidelen = Math.round(height / 13);
   const pad = avgsidelen / 4;
-  console.log(Array(Math.round(random(15, 25))));
   const rectangles = [];
   const maxTries = 10;
   const { colorMode } = useColorMode();
   return (
     <svg viewBox={`0 0 ${width} ${height}`} className={className}>
-      {[...Array(20)].map((_, idx) => {
-        const sidelen = random(avgsidelen - 7, avgsidelen + 7);
+      {[...Array(Math.round(random(15, 25)))].map((_, idx) => {
+        const sidelen = random(avgsidelen - 10, avgsidelen + 10);
         let good = false;
         let top, left, newRect;
         let tries = 0;
