@@ -2,14 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.color1 {
-  @apply text-blue-500;
-}
+@layer utilities {
+  .color1 {
+    @apply text-blue-500;
+  }
 
-.color2 {
-  @apply text-indigo-500;
-}
+  .color2 {
+    @apply text-indigo-500;
+  }
 
-.color3 {
-  @apply text-purple-500;
+  .color3 {
+    @apply text-purple-500;
+  }
+
+  .wavy {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+
+  .transparent {
+    --tw-bg-opacity: 0.8 !important;
+  }
 }

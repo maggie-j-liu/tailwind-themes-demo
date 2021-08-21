@@ -11,6 +11,8 @@ module.exports = {
       },
     },
   },
+  // uncomment when not using jit mode
+  /*
   variants: {
     extend: {
       backgroundColor: ["themes"],
@@ -21,6 +23,7 @@ module.exports = {
       textColor: ["themes"],
     },
   },
+  */
   plugins: [
     require("tailwind-themes")({
       themes: {
