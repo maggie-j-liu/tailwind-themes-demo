@@ -1,6 +1,6 @@
 import React from "react";
 import SVGElements from "./SVGElements";
-import debounce from "../utils/debounce";
+import { debounce } from "../utils";
 const Background = () => {
   const [isMounted, setIsMounted] = React.useState(false);
   const [dimensions, setDimensions] = React.useState({

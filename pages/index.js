@@ -20,6 +20,7 @@ const Home = () => {
           name="description"
           content="A Tailwind CSS plugin that adds variants for multiple color themes."
         />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Background />
       <Navbar />
