@@ -56,6 +56,7 @@ const Navbar = () => {
           href={"https://github.com/maggie-j-liu/tailwind-themes"}
           target="_blank"
           rel="noreferrer"
+          className={"hover:bg-indigo-50 px-2 py-2 rounded-full"}
         >
           <svg
             className={"h-6 w-6 text-indigo-500"}
